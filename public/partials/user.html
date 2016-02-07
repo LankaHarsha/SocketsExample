@@ -1,0 +1,32 @@
+<div class="container" ng-controller="userController">
+	<div class="panel" id="panel" style="bottom: 0px;">
+		<div class="panel-heading chat-toggle">
+			<span>Leave a message</span>
+			<span class="chatbox-toggle" style="display: block;"></span>
+		</div>
+		<div id="chat-area">
+			<div class="panel-body">
+
+				<!-- Chatbox messages here -->
+				<div id="messages">
+					<div id="messages">
+						<div ng-repeat="message in userMessages">
+							<p>{{message}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-footer">
+				<form autocomplete="off" novalidate="" spellcheck="false" id="chatWidget" ng-submit="sendMessage()">
+					<div class="form-group">
+						<input type="text" placeholder="Type your message here..." id="message" ng-model="activeUser.message">
+						<button type="submit" class="btn btn-danger" >send</button>
+						<div style="clear:both"></div>
+						{{userName}}
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,16 @@
+<div class="container" ng-controller="adminController">
+	<table class="table table-striped">
+		<thead>
+			<th> User Name </th>
+			<th> User Id </th>
+			<th> Chat </th>
+		</thead>
+		<tbody>
+			<tr ng-repeat="(key,value) in usersOnline">
+				<td>{{value.name}}</td>
+				<td>{{value.id}}</td>
+				<td><a href="#">Chat </a><span class="badge">{{value.messages.length}}</span></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

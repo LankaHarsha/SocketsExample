@@ -1,0 +1,32 @@
+{
+  "name": "basic-socket-implementation",
+  "version": "1.0.0",
+  "description": "Implementing sockets in node js where multiple users send messages to single admin",
+  "main": "ServerSideSocketV0.3.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "socket.io": "^1.3.6",
+    "fs": "^0.0.2"
+  },
+  "devDependencies": {
+    "express": "^4.13.4",
+    "socket.io": "^1.4.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LankaHarsha/SocketsExample.git"
+  },
+  "keywords": [
+    "Sockets"
+  ],
+  "author": "Harsha Lanka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LankaHarsha/SocketsExample/issues"
+  },
+  "homepage": "https://github.com/LankaHarsha/SocketsExample#readme"
+}
